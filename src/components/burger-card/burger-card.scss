@@ -1,0 +1,79 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  margin: 1%;
+  padding: 1%;
+  border-radius: 5%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.burger-headline {
+  display: flex;
+  justify-content: space-around;
+}
+
+.burger-main-section {
+  padding: 0 5%;
+}
+
+.burger-img {
+  width: 178px;
+}
+
+.burger-img-container {
+  display: flex;
+  align-items: center;
+}
+
+.burger-ingredients {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 10px;
+}
+
+.btn-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.burger-right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1220px) {
+  .card-container {
+    font-size: 10px;
+  }
+  .btn.btn-primary {
+    font-size: 10px;
+    padding: .205rem .45rem;
+  }
+  .burger-right-side {
+    padding: 10% 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .burger-img-container {
+    justify-content: center;
+  }
+  p.burger-ingredients {
+    align-items: center;
+    padding: 0;
+  }
+  .btn-menu {
+    justify-content: center;
+  }
+  .burger-ingredients {
+    font-size: 1.5em;
+  }
+  .btn.btn-primary {
+    font-size: 16px;
+    padding: 0.375rem 0.75rem;
+  }
+}
